@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "dev.eposs.unlimitedenchantments.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AnvilLevelCostMixin",
+		"ExampleMixin",
+		"RomanLevelTranslationMixin",
+		"UnlimitedLevelsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

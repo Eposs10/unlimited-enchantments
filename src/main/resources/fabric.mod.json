@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "unlimited-enchantments",
+	"version": "${version}",
+	"name": "Unlimited Enchantments",
+	"description": "Removes enchantment level cap and \"Too Expensive!\" text.",
+	"authors": [
+		"Eposs"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "dev.eposs.unlimitedenchantments.UnlimitedEnchantments"
+		]
+	},
+	"mixins": [
+		"unlimited-enchantments.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
