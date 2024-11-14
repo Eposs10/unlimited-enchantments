@@ -4,6 +4,7 @@
 	"version": "${version}",
 	"name": "Unlimited Enchantments",
 	"description": "Removes enchantment level cap and \"Too Expensive!\" text.",
+	"icon": "assets/unlimited-enchantments/icon.png",
 	"authors": [
 		"Eposs"
 	],
