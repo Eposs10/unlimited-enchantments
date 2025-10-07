@@ -20,9 +20,13 @@ public class ModConfig implements ConfigData {
     public int maxLevel = 0;
     public int maxExp = 38;
 
-    @Override
-    public void validatePostLoad() throws ValidationException {
-        if (maxLevel < 0) maxLevel = 0;
-        if (maxExp < 0) maxExp = 0;
+    public int getMaxLevel() {
+        if (maxLevel <= 0) return Integer.MAX_VALUE;
+        return maxLevel;
+    }
+
+    public int getMaxExp() {
+        if (maxExp <= 0) return Integer.MAX_VALUE;
+        return maxExp;
     }
 }

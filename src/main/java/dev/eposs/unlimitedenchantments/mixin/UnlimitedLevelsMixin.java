@@ -23,6 +23,6 @@ public abstract class UnlimitedLevelsMixin {
             )
     )
     private int unlimitedLevels(Enchantment enchantment) {
-        return ModConfig.getConfig().maxLevel <= 0 ? Integer.MAX_VALUE : ModConfig.getConfig().maxLevel;
+        return ModConfig.getConfig().getMaxLevel();
     }
 }

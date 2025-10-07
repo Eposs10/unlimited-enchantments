@@ -13,7 +13,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Debug(export = true)
 @Mixin({AnvilScreenHandler.class})
 public abstract class AnvilScreenHandlerMixin {
     public AnvilScreenHandlerMixin() {
@@ -25,7 +24,7 @@ public abstract class AnvilScreenHandlerMixin {
     
     @Inject(method = {"updateResult"}, at = {@At("RETURN")})
     private void updateResultInject(CallbackInfo ci) {
-        if (levelCost.get() > ModConfig.getConfig().maxExp) levelCost.set(ModConfig.getConfig().maxExp);
+        if (levelCost.get() > ModConfig.getConfig().getMaxExp()) levelCost.set(ModConfig.getConfig().getMaxExp());
     }
 
     @ModifyConstant(method = "updateResult", constant = @Constant(intValue = 40))
