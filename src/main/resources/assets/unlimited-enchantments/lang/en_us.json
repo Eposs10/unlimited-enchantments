@@ -1,5 +1,5 @@
 {
   "text.autoconfig.unlimited-enchantments.title": "Unlimited Enchantments",
-  "text.autoconfig.unlimited-enchantments.option.maxLevel": "Max Enchantment Level (0 = no limit)",
-  "text.autoconfig.unlimited-enchantments.option.maxExp": "Max Anvil Cost (0 = no limit)" 
+  "text.autoconfig.unlimited-enchantments.option.maxLevel": "Max enchantment level (0 = no limit)",
+  "text.autoconfig.unlimited-enchantments.option.maxExp": "Max anvil cost (0 = no limit)" 
 }
