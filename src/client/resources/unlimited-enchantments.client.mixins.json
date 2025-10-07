@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.eposs.unlimitedenchantments.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AnvilScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

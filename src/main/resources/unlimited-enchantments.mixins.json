@@ -1,13 +1,13 @@
 {
-	"required": true,
-	"package": "dev.eposs.unlimitedenchantments.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"AnvilLevelCostMixin",
-		"RomanLevelTranslationMixin",
-		"UnlimitedLevelsMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "dev.eposs.unlimitedenchantments.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "RomanLevelTranslationMixin",
+    "UnlimitedLevelsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

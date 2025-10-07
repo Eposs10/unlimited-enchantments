@@ -1,5 +1,6 @@
 package dev.eposs.unlimitedenchantments.mixin;
 
+import dev.eposs.unlimitedenchantments.config.ModConfig;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.screen.AnvilScreenHandler;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,6 +23,6 @@ public abstract class UnlimitedLevelsMixin {
             )
     )
     private int unlimitedLevels(Enchantment enchantment) {
-        return Integer.MAX_VALUE;
+        return ModConfig.getConfig().maxLevel <= 0 ? Integer.MAX_VALUE : ModConfig.getConfig().maxLevel;
     }
 }

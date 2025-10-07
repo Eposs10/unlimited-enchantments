@@ -1,27 +1,37 @@
 {
-	"schemaVersion": 1,
-	"id": "unlimited-enchantments",
-	"version": "${version}",
-	"name": "Unlimited Enchantments",
-	"description": "Removes enchantment level cap and \"Too Expensive!\" text.",
-	"icon": "assets/unlimited-enchantments/icon.png",
-	"authors": [
-		"Eposs"
-	],
-	"license": "MIT",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-          "dev.eposs.unlimitedenchantments.UnlimitedEnchantments"
-		]
-	},
-	"mixins": [
-		"unlimited-enchantments.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": ">=1.21",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "unlimited-enchantments",
+  "version": "${version}",
+  "name": "Unlimited Enchantments",
+  "description": "Removes enchantment level cap and \"Too Expensive!\" text.",
+  "icon": "assets/unlimited-enchantments/icon.png",
+  "authors": [
+    "Eposs"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.eposs.unlimitedenchantments.UnlimitedEnchantments"
+    ],
+    "client": [
+      "dev.eposs.unlimitedenchantments.UnlimitedEnchantmentsClient"
+    ],
+    "modmenu": [
+      "dev.eposs.unlimitedenchantments.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "unlimited-enchantments.mixins.json",
+    {
+      "config": "unlimited-enchantments.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
