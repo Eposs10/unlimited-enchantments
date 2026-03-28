@@ -4,8 +4,6 @@ import dev.eposs.unlimitedenchantments.UnlimitedEnchantments;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 
 @Config(name = UnlimitedEnchantments.MOD_ID)
 public class ModConfig implements ConfigData {
@@ -16,7 +14,7 @@ public class ModConfig implements ConfigData {
     public static void save() {
         AutoConfig.getConfigHolder(ModConfig.class).save();
     }
-    
+
     public int maxLevel = 0;
     public int maxExp = 38;
 

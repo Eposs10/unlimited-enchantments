@@ -3,9 +3,8 @@
   "package": "dev.eposs.unlimitedenchantments.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "AnvilScreenHandlerMixin",
-    "RomanLevelTranslationMixin",
-    "UnlimitedLevelsMixin"
+    "AnvilMenuMixin",
+    "RomanLevelTranslationMixin"
   ],
   "injectors": {
     "defaultRequire": 1
