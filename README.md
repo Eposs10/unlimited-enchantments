@@ -14,5 +14,6 @@
 
 ## Dependencies:
 
-- [Cloth Config Api](https://modrinth.com/mod/cloth-config)
-- [Modmenu (optional)](https://modrinth.com/mod/modmenu)
+- [Fabric API](https://modrinth.com/mod/fabric-api)
+- [Cloth Config API](https://modrinth.com/mod/cloth-config)
+- [Mod Menu (optional)](https://modrinth.com/mod/modmenu)
